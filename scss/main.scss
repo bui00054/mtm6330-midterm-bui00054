@@ -1,0 +1,177 @@
+@import 'normalize';
+@import 'base';
+
+/* Global Sass variables*/
+$brand-color: #F8F7EF;
+$theme:#5A0603;
+/* style for general htm page*/
+
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* style for index.htm page*/
+
+.row{
+    display: block;
+    margin: 0px 20px 20px 20px;
+    justify-content: space-evenly;	
+    background-color:$brand-color;  
+    
+
+    .column{
+    padding: 0 5px;
+    float: left;
+    width: 50%;
+    }
+}
+.section{
+    display: flex;
+    flex-wrap:nowrap;
+    float: left;
+    line-height: 40px; 
+    background-color:$brand-color;  
+
+    .box1{
+    width: 300px;
+    height: auto;
+    overflow: visible;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 1%;
+    box-shadow: 5px 10px 18px #888888;
+    display: table;    
+}
+
+    .box2{
+    overflow: visible;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 1%;
+    box-shadow: 5px 10px 18px #888888;
+    display: table;  
+    text-align: center;
+}
+}
+
+
+/* style for food.htm*/
+
+
+.content{
+    width: 80%;
+    height: auto;
+    overflow: visible;
+    background-color: white;
+    padding: 30px;
+    border: 1px solid;
+    border-radius: 1%;
+    box-shadow: 5px 10px 18px #888888;
+    margin: auto;
+    border-spacing: 5px 1rem;
+}
+
+.img1{
+    float: left;
+    padding: 20px;
+    width:auto;
+    height:300px;
+   
+}
+.img2{
+    float: right;
+    padding: 20px;
+    width:auto;
+    height:300px;
+}
+
+.boxx{
+    padding-bottom: 39px;
+}
+
+/* style for gallery.htm*/
+
+.col .pic{
+    width: 300px;
+    height: 300px;
+}
+
+.wrapper{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: 300px 300px 300px;
+  grid-auto-flow: column;
+  padding-bottom: 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 500px) {
+header {
+        width: 100% }
+.column {
+        width: 100%;
+    }
+
+.box2 {
+    position: relative;
+    float:right;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+section.box2 {
+    width: 100%;
+    float: right;
+    }
+.wrapper{
+    width: 100%;
+}
+.col{
+    float: left;    
+  }
+
+nav ul   {
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    
+}
+
+nav ul li a{
+    background:$theme;
+    float: left;
+    display: block;
+    width: 100%;
+}
+
+
+/* divide column*/
+.wrapper{
+    display: table;
+    
+
+}
+.col{
+    float: left;  
+  
+}
+.col .pic{
+    width: 150px;
+    height: auto;
+    margin: auto;  
+}
+}
