@@ -21,61 +21,63 @@ main{
     line-height: 40px;   
 }
 
-.logo {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 header{
     background: $brand-color;
-}
+
+    .logo {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
 
-nav{
+    nav{
     margin: 5px;
     padding: 1px;
     text-align: center;
     background-color:$theme;
     width: 100%;    
-}
 
-nav ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    overflow: hidden; 
-    display: inline-block;
+
+         ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden; 
+        display: inline-block;
+        
+
+        li{
+            float: left;
     
-}
 
-nav ul li{
-    float: left;
+             a{
+        color: $brand-color; 
+        line-height: calc (0.667rem * 1); 
+        text-align: center; 
+        text-decoration: none;
+        margin: 0;
+        padding: 1rem;
+        width: 100%;
+        display: inline-block;   
+         
 
-}
-
-nav ul li a{
-    color: grey; 
-    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
-    line-height: calc (0.667rem * 1); 
-    text-align: center; 
-    text-decoration: none;
-    margin: 0;
-    padding: 1rem;
-    width: 100%;
-    display: inline-block;
-   
-}
-
-nav ul li a:hover {
-    background-color: #000000;
-    color: $brand-color;
+        &:hover {
+        background-color: #000000;
+        color: $brand-color;
+        }
+    }
+    }
+    }
+  }   
 }
 
 h1{
-    color: #EC9440;
+    color: $text-color;
     text-transform: uppercase;
     font-weight: bold;
     text-align: left;
@@ -86,7 +88,6 @@ footer p{
     color: $brand-color;
     text-align: center;
     background-color:$theme;
-    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
     line-height: calc (0.667rem * 1); 
     text-align: center; 
     text-decoration: none;
